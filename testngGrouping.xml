@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    preserve-order="false"-->
+    <test name="TestNGGroupsDemo">
+        <parameter name="browserName" value="chrome"></parameter>
+        <groups>
+            <run>
+                <include name="sanity"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginPageRunTestNGGroups">
+<!--                <methods>-->
+<!--                    <include name="verifyPageTitle"/>-->
+<!--                    <include name="verifyIfStepsToGenerateAccessBannerIsPresent"/>-->
+<!--                    <include name="verifyIfResetButtonClearsUserIdAndPassword"/>-->
+<!--                    <include name="verifyLoginWithIncorrectUserIdAndCorrectPassword"/>-->
+<!--                    <include name="verifyUserNavigatingToLoginAfterAcceptingAlert"/>-->
+<!--                    <include name="verifyLoginWithCorrectUserIdAndIncorrectPassword"/>-->
+<!--                    <include name="verifyLoginWithEmptyUserIdAndEmptyPassword"/>-->
+<!--                    <include name="verifyUserLogin"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>

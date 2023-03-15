@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+
+    <test name="TestOnChrome">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="tests.LoginPageCrossBrowserTest">
+                <methods>
+                    <include name="verifyUserLogin"/>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TestOnFireFox">
+        <parameter name="browserName" value="firefox"></parameter>
+        <classes>
+            <class name="tests.LoginPageCrossBrowserTest">
+                <methods>
+                    <include name="verifyUserLogin"/>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TestOnMicrosoftEdge">
+        <parameter name="browserName" value="msedge"></parameter>
+        <classes>
+            <class name="tests.LoginPageCrossBrowserTest">
+                <methods>
+                    <include name="verifyUserLogin"/>
+                    <include name="verifyHomePageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
